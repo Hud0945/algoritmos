@@ -1,0 +1,28 @@
+<html>
+<script>
+let Avaliação1 = parseFloat(prompt('Insira a sua nota'));
+let Avaliação2 = parseFloat(prompt('Insira a sua nota'));
+let Avaliação3 = parseFloat(prompt('Insira a sua nota'));
+
+let media = (Avaliação1 + Avaliação2 + Avaliação3) / 3;
+
+
+if(media >= 7) {
+		alert('Parabéns!Você está APROVADO com média' + media.toFixed(2));
+} else if (media < 5) {
+		alert('Que pena! Infelizmente você está REPROVADO com a media' + media.toFixed(2));
+} else {
+	alert('Quase! Você encontra-se em RECUPERAÇÃO com media' + media.toFixed(2));
+	let Avaliação4 = parseFloat(prompt('Insira a sua nota'));
+	
+	media = (media + Avaliação4) /2;
+	if(media >= 7) {
+		alert('Parabéns!Você está APROVADO com media'+ media.toFixed(2));
+	}else{
+		alert('Sua nova media e ' + media.toFixed(2));
+	}
+	
+}	
+
+</script>
+</html>
