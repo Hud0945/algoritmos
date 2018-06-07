@@ -1,0 +1,28 @@
+<html>
+<script>
+let numero1 = parseInt(prompt('Digite um numero'));
+let numero2 = parseInt(prompt('Digite um numero'));
+let numero3 = parseInt(prompt('Digite um numero'));
+
+let auxiliar;
+
+if (numero1 < numero2) {
+	auxiliar = numero2
+	numero2 = numero1
+	numero1 = auxiliar
+}
+
+if (numero2 < numero3) {
+	auxiliar = numero3;
+	numero3 = numero2
+	numero2 = auxiliar
+}
+
+if (numero1 < numero2) {
+	auxiliar = numero2
+	numero2 = numero1
+	numero1 = auxiliar
+}
+alert(numero3 + '<-' + numero2 + '<-'+ numero1);
+</script>
+</html>

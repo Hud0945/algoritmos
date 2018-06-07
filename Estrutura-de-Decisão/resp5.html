@@ -1,0 +1,35 @@
+<html>
+<script>
+let nota1 = prompt('Digite a nota 1');
+if (isNaN(nota1)) {
+	alert('Nota 1 dever ser um número');
+	exit();
+}
+nota1 = parseFloat(nota1);
+
+let nota2 = prompt('Digite a nota 2');
+if(isNaN(nota2)){
+	alert('Nota 2 deve ser um número');
+	exit();
+}
+nota2 = parseFloat(nota2);
+
+if (nota1 < 0 || nota1 > 10 || nota2 < 0 || nota2 > 10){
+	alert('As notas devem estar entra 0 e 10');
+	exit();
+
+let media = (nota1 +  nota2) /2;
+
+if(media ==10) {
+	alert('Aprovado com Distinção');
+} else if (media < 7){
+	alert('Reprovado');
+} else {
+	alert('Aprovado');
+}
+
+}
+
+
+</script>
+</html>
