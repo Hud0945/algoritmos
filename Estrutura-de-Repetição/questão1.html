@@ -1,0 +1,13 @@
+<html>
+<script>
+for (let i = 0; i < 10; i++) {
+	var nota = parseFloat(prompt('Digite uma nota'));
+	if(nota < 0 || nota > 10) {
+		break;
+	} else {
+		alert('Nota inválida!\n' + 'Tentativa ' + (i + 1) + '\n' + 'Apenas notas entre 0 a 10');
+	}
+}
+alert('Nota '+ nota);
+</script>
+</html>

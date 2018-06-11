@@ -1,0 +1,36 @@
+<html>
+<script>
+//validação do nome
+let nome = prompt('Digite o nome');
+for (let i = 0; nome.length <= 3; i++){
+	nome = prompt('Digite o nome');
+}
+alert(nome);
+
+//validação da idade
+let ehIdadeValida = false;
+for ( let i = 0; !ehIdadeValida; i++) {
+	 idade = parseInt(prompt('Sua idade'));
+	 ehIdadeValida =  (idade >= 0 && idade <= 150)
+	
+}
+alert(idade);
+
+//validação do sexo
+let ehSexoValido = false;
+for(let i = 0; !ehSexoValido; i++) {
+	var sexo = prompt('Seu sexo');
+	sexo = sexo.toLowerCase();
+	ehSexoValido = (sexo=='m' || sexo=='f');
+}
+alert(sexo);
+
+//validação estado civil
+let ehEstadocivilValido = false;
+for(let i = 0; !ehEstadocivilValido; i++){
+	var estadocivil = prompt('Digite seu estado civil');
+	estadocivil = estadocivil.toLowerCase();
+	ehEstadocivilValido = (estadocivil=='c'|| estadocivil=='s' || estadocivil=='n');
+}
+</script>
+</html>
