@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<script>
+let sexo = parseFloat(prompt('Digite seu Sexo escolha 1-Sexo Masculino / 2- Sexo Feminino '));
+let altura = parseFloat(prompt('Digite a sua alturar '));
+let peso = parseFloat(prompt('Digite o seu peso'));
+
+if(sexo == 1){
+    peso_ideal = (72.7*altura) - 58
+} else {
+     peso_ideal = (62.1*altura) - 44.7
+} if(peso < peso_ideal){
+        alert('Você está abaixo do peso! ')
+} else if (peso == peso_ideal) {
+    alert('Você está com o seu peso ideal!')
+} else {
+    alert('Seu peso está acima do ideal! ')
+
+}
+    
+</script>
+</html>
