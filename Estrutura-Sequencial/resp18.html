@@ -7,6 +7,9 @@
     <title>Document</title>
 </head>
 <script>
+let tamanho = parseFloat(prompt('Tamanho do Arquivos (MB): '));
+let velocidade = parseFloat(prompt('Velocidade de internet (MBps):' ));
 
+alert('Tempo aproximado do download: ' + ((tamanho / velocidade) * 60))
 </script>
 </html>

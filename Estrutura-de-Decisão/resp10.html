@@ -5,18 +5,16 @@
 </head>
 <body>
 <script>
-let turno1 = parseInt(prompt('Digite o seu turno'));
-let turno2 = parseInt(prompt('Digite o seu turno'));
-let turno3 = parseInt(prompt('Digite o seu turno'));
+let turno = parseInt(prompt('Em que Turno você estuada? M=maturnino, V=vespertino ou N-noturno: '));
 
-if(turno1){
-	alert('Bom Dia!')
-}else if(turno2){
-	alert('Boa Tarde!')
-}else if (turno3){
-	alert('Boa noite!')
-}else{
-	alert('Valor Invalido')
+if(turno == M || turno == 'm') {
+	alert('Bom Dia')
+} else if(turno == V || turno == 'v') {
+	alert('Boa Tarde')
+} else if (turno == N || turno == 'n') {
+	alert('Boa Noite')
+} else {
+	alert('Valor invalido')
 }
 </script>
 </body>

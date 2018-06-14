@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<script>
+let numeros = new Array(10);
+let pares = [];
+let impares = [];
+
+let index_par = 0, index_impar = 0;
+
+for(let i = 0; i < numeros.length; i++) {
+    numeros[i] = parseInt(prompt('Numero '+ i));
+    let resto = numeros[i] % 2;
+    if (resto == 0) {
+        pares[index_par] = numeros[i];
+        index_par++;
+    } else {
+        impares[index_impar] = numeros[i];
+        index_impar++;
+    }
+}
+
+alert(numeros);
+alert(pares);
+alert(impares);
+</script>
+</html>

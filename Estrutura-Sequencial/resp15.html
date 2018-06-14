@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<script>
+let quantidadehora = parseFloat(prompt('Digite a quantidade que você ganhar por hora'));
+let horastrabalhada = parseFloat(prompt('Digite a suas horas Trabalhadas'));
+
+salarioB = quantidadehora * horastrabalhada;
+
+ir = (11 / 100.0 * salarioB);
+inss = (8 / 100.0 * salarioB);
+sindicato = ( 5 /100.0 * salarioB);
+
+let vT = ir + inss + sindicato
+salarioL = salarioB - vT
+
+alert('Seu salário bruto é ' +salarioB) 
+alert('Valor dos impostos:')
+alert('IR: '+ir)
+alert('INSS: '+inss)
+alert('Sindicato: '+sindicato)
+alert('Seu salário liquido é: '+salarioL)
+</script>
+</html>

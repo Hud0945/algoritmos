@@ -7,6 +7,18 @@
     <title>Document</title>
 </head>
 <script>
+let tamanho = parseFloat(prompt('Tamanho em metros quadrados:'));
+let litros = tamanho / 3
 
+if(tamanho % 54 == 0) {
+    latas = tamanho /  54
+} else {
+    latas = prompt(tamanho / 54) + 1
+}
+
+preco = latas * 80 
+
+alert('%d latas ' %latas)
+alert('R$ %.2f ' %preco)
 </script>
 </html>
