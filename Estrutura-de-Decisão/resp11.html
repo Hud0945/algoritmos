@@ -1,11 +1,32 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
 <script>
-let salario = parseFloat(prompt('Digite seu salário'));
-let por = (20 / 100.0) * salario
-if( salario <= 280){
-	salario 
+let salario = parseFloat(prompt('Digite o seu salario '));
 
+
+if (salario <= 280) {
+	por = 20 / 100.0 * salario
+	resultado = salario + por
+} else if (salario > 280 && salario <= 700) {
+	por = 15 / 100.0 * salario
+	resultado = salario + por
+} else if ( salario > 700 && salario <= 1500.00) {
+	por = 10 / 100.0 * salario
+	resultado = salario + por
+} else if ( salario > 1500) {
+	por = 5 / 100.0 * salario 
+	resultado = salario + por 
 }
 
+alert('Seu salario antes do reajuste: R$ ' + salario);
+alert('Percentual aumentado % ' + 20);
+alert('O valor do aumento é: R$' + por );
+alert('Com o reajuste, o seu sálario é: R$' + resultado);
 </script>
 </html>
