@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<script>
+let meses = ["Janeiro","Fevereiro","Março","Abril","Maio","Junho","Julho","Agosto","Setembro","Outubro","Novembro","Dezembro"];
+let data = prompt("Informe a data (dd/mm/aaaa): ");
+let data2 = data.split('/');
+let dia = data2[0];
+let mes = data2[1];
+let ano = data2[2];
+let mes2 = parseInt(mes)-1;
+alert(dia[dia] + ", " + dia + " de " + meses[mes2]
+	+ " de " + ano);
+</script>
+</html>
