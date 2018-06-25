@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<script>
+let data = new Date();
+
+let dias_semana  = ['dom', 'seg', 'ter', 'qua', 'qui', 'sex', 'sab']
+
+let dia_semana  = dias_semana[data.getDay()];
+
+let dia_mes = data.getDate();
+
+let meses = ['jan' , 'fev', 'mar', 'abr', 'mai', 'jun', 'jul', 'ago', 'set', 'out', 'nov', 'dez']
+
+let mes_extenso = meses[data.getMonth()];
+
+let ano = data.getFullYear();
+
+let data_extenso = dia_semana + ', ' + dia_mes + ' de ' + mes_extenso + ano 
+
+alert(data_extenso);
+</script>
+</html>
