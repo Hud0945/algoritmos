@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<script>
+function soma(numero1,numero2) {
+    let resultado = numero1 + numero2;
+    return resultado;
+}
+
+function fatorial(numero) {
+    let resultado = 1;
+    for (let i = numero; i > 0; i--) {
+        resultado *= i;
+    }
+    return resultado;
+}
+let teste = fatorialRecusivo(5);
+
+function fatorialRecusivo(numero) {
+    return numero == 1 ? 1 : fatorialRecusivo(numero - 1) * numero;
+}
+
+alert(teste);
+</script>
+</html>
