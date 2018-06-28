@@ -1,17 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
+<html>
 <script>
-function resultado_imposto(taxaImposto,custo) {
-    resultado_imposto = 300 + ( 300 * taxaImposto / 100)
-    return resultado_imposto
+
+function imposto(numero, taxa){
+
+    taxa = 5;
+    operar = numero *(taxa)/100;
+    resultado = numero + operar;
+
+    return resultado;
 }
 
-alert(resultado_imposto);
+let result = imposto(
+    parseFloat(prompt("Informe um valor : "))
+);
+
+alert('Seu salario é de: '  + result );
 </script>
 </html>
