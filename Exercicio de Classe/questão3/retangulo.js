@@ -4,12 +4,20 @@ class Retangulo {
       this._altura = altura;  
     }
 
-    mudarBase(base) {
+    definirBase(base) {
         this._base = base;
     }
 
-    mudarAltura(altura) {
+    definirAltura(altura) {
         this.altura = altura;
+    }
+
+    obterBase() {
+        return this._base;
+    }
+
+    obterAltura() {
+        return this.altura;
     }
 
     obterArea() {
