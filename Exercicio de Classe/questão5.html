@@ -1,0 +1,16 @@
+<html>
+<script src="questão5/conta-corrente.js"></script>
+<script>
+let weskley = new Contacorrente('1245', 'Weskley', 600.0);
+let hudson = new Contacorrente('8758', 'Hudson', 200.0);
+
+if(weskley.transferir(100.0, hudson)) {
+    alert('Sucesso');
+} else {
+    alert('Falha');
+}
+
+alert(weskley.toString());
+alert(hudson.toString());
+</script>
+</html>

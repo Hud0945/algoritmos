@@ -1,0 +1,19 @@
+<html>
+<script src="questão3/retangulo.js"></script>
+<script>
+let comprimento = parseFloat(prompt('Informe o comprimento do local'));
+let largura = parseFloat(prompt('Informe a largura ao local'));
+
+let largura_piso = parseFloat(prompt('Largura do piso'));
+let comprimento_piso = parseFloat(prompt('comprimento do piso'));
+
+let terreno = new Retangulo(comprimento, largura);
+let piso = new Retangulo(largura_piso, comprimento_piso);
+
+alert(
+    'Area do terreno: ' + terreno.obterArea() + '\n' +
+    'Area do piso: ' + piso.obterArea() + '\n' +
+    'Quantidade de pisos: ' + (terreno.obterArea() / piso.obterArea())
+);
+</script>
+</html>
